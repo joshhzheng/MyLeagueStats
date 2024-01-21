@@ -12,7 +12,8 @@ const getHeroValuesFromDb = async (id) => {
       const heros = database.collection("champions");
 
       const query = { id: id };
-      const result = await heros.findOne(query);
+      options = { projection: { _id: 0, id: 1, name: 1, lore: 1, stat: 1, image:1 }};
+      const result = await heros.findOne(query,options);
       return result;
     } finally {
       await client.close();

@@ -14,6 +14,9 @@ require("dotenv/config");
 
 const riotAPIKey = process.env.riotAPIKey;
 
+const{ getItems } = require("../controllers/itemController");
+const{ getHero } = require("../controllers/heroController");
+
 async function fetchData(matchId) {
   const apiUrl = `https://americas.api.riotgames.com/lol/match/v5/matches/${matchId}`;
 
@@ -54,8 +57,15 @@ async function fetchData(matchId) {
       const goldEarned = playerData.goldEarned;
       const items = [];
       for (let j = 0; j < 6; j++) {
-        items.push(playerData[`item${j}`]);
+        items.push(playerData[`item${j}`].toString());
       }
+
+      const itemsMapping = await getItems(items);
+      for (let j = 0; j < 6; j++) {
+        items[j] = itemsMapping[playerData[`item${j}`].toString()];
+      }
+
+      const heroData = await getHero(championName);
 
       // Add player data to the hashmap
       playerHashMap[puuid] = {
@@ -63,7 +73,7 @@ async function fetchData(matchId) {
         lane: lane,
         playerName: playerName,
         playerTagline: playerTagline,
-        championName: championName,
+        championName: heroData,
         kills: kills,
         deaths: deaths,
         assists: assists,

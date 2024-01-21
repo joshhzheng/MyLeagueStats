@@ -76,7 +76,11 @@ const App = () => {
     // fetch account puuid data here
     console.log('Name:', name); // pass through here
     console.log('Tag:', tag);
-    getUserInfo(name, tag);
+    try {
+      const uesrInfo = await getUserInfo(name, tag);
+    } catch (e) {
+      console.log(e);
+    }
   }
 
   return (

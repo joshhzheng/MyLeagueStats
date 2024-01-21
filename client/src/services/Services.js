@@ -2,10 +2,10 @@ import axios from 'axios';
 
 const backendUrl = 'http://localhost:8080';
 
-const getUserInfo = async (name, tag) => {  
+const getUserInfo = async (name, tagLine) => {  
   let results = {};
   try {
-    results = await axios.get(`${backendUrl}/api/data/player/${name}/${tag}`);
+    results = await axios.get(`${backendUrl}/api/data/player/${name}/${tagLine}`);
     return results.data;
   } catch (err) {
     console.log(err);

@@ -2,10 +2,10 @@ import axios from 'axios';
 
 const backendUrl = 'http://localhost:8080';
 
-const getSleeps = async () => {
+const getUserInfo = async (name, tagLine) => {
   let results = {};
   try {
-    results = await axios.get(`${backendUrl}/sleeps`);
+    results = await axios.get(`${backendUrl}/api/data/player/${name}/${tagLine}`);
     return results.data;
   } catch (err) {
     console.log(err);
@@ -13,10 +13,10 @@ const getSleeps = async () => {
   }
 };
 
-const deleteSleep = async (id) => {
+const getMatchList = async (puuid) => {
   let results = {};
   try {
-    results = await axios.delete(`${backendUrl}/sleeps/${id}`);
+    results = await axios.get(`${backendUrl}/api/data/match-list/${puuid}`);
     return results.data;
   } catch (err) {
     console.log(err);
@@ -24,10 +24,10 @@ const deleteSleep = async (id) => {
   }
 };
 
-const createSleep = async (day, hours, score) => {
+const getMatchData = async (matchId) => {
   let results = {};
   try {
-    results = await axios.post(`${backendUrl}/sleeps`, { day: day, hours: hours, score: score });
+    results = await axios.post(`${backendUrl}/api/data/match/${tagLine}`);
     return results.data;
   } catch (err) {
     console.log(err);
@@ -35,4 +35,4 @@ const createSleep = async (day, hours, score) => {
   }
 };
 
-export { getSleeps, deleteSleep, createSleep };
+export { getUserInfo, getMatchList, getMatchData };

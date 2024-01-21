@@ -10,7 +10,7 @@ router.get("/data/player/:accountName/:accountTagline", async (req, res) => {
     try {
         const { accountName, accountTagline } = req.params;
         const playerData = await fetchAccountData(accountName, accountTagline);
-        res.json(playerData); 
+        res.send(playerData); 
     } catch (error) {
         console.log(error.message); 
         res.status(500).send("Internal Server Error");
@@ -22,7 +22,7 @@ router.get("/data/match-list/:puuid", async (req, res) => {
     try {
         const { puuid } = req.params;
         const matchList = await fetchNormalMatch(puuid);
-        res.json(matchList);
+        res.send(matchList);
     } catch (error) {
         console.log(error.message);
         res.status(500).send("Internal Server Error");
@@ -34,7 +34,7 @@ router.get("/data/match/:matchId", async (req, res) => {
     try {
         const { matchId } = req.params;
         const matchData = await fetchData(matchId);
-        res.json(matchData);
+        res.send(matchData);
     } catch (error) {
         console.log(error.message);
         res.status(500).send("Internal Server Error");

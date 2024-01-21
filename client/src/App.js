@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import Match from './Components/Match';
 import './App.css';
 
@@ -120,11 +120,11 @@ const App = () => {
      <Match match={samplePlayerData} />
 
 
-    {/* the display works when I comment out this code for some reason */}
-     {/* <div>
+    {/* the display works when I comment out this code for some reason
+     <div>
      <Link to={{
         pathname: "/game-report",
-        state: { matchData: samplePlayerData } // Replace this with your actual match data
+        state: { matchData: "hello" } // Replace this with your actual match data
       }}>
       <img src={seeMoreIcon} alt="See More" />
     </Link>

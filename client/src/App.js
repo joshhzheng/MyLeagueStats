@@ -17,12 +17,12 @@ const App = () => {
       </div>
 
       <div className='summoner-data'>
-        <div className='summoner-name'>
+        <div className='summoner-name'>    
           Bread
         </div>
 
         <div className='summoner-tag'>
-          #8166
+          #8166 
         </div>
       </div>  
         
@@ -43,7 +43,7 @@ const App = () => {
           ARAM  
         </div> 
 
-        <div className='top-result'>
+        <div className='result'>
           WIN
         </div>
 

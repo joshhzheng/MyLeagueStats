@@ -1,18 +1,12 @@
 const express = require("express");
-const cors = require("cors");
-require("dotenv/config");
+const router = express.Router();
 
-const { fetchData } = require("./components/getMatchData.js");
-const { fetchNormalMatch } = require("./components/getNormalMatchList.js");
-const { fetchAccountData } = require("./components/getAccountPuuid.js");
-
-const app = express();
-const port = 4000;
-
-app.use(cors());
+const { fetchData } = require("../components/getMatchData.js");
+const { fetchNormalMatch } = require("../components/getNormalMatchList.js");
+const { fetchAccountData } = require("../components/getAccountPuuid.js");
 
 // get the current player data
-app.get("/data/player/:accountName/:accountTagline", async (req, res) => {
+router.get("/data/player/:accountName/:accountTagline", async (req, res) => {
     try {
         const { accountName, accountTagline } = req.params;
         const playerData = await fetchAccountData(accountName, accountTagline);
@@ -24,7 +18,7 @@ app.get("/data/player/:accountName/:accountTagline", async (req, res) => {
 })
 
 // get the five most recent matches for the player
-app.get("/data/match-list/:puuid", async (req, res) => {
+router.get("/data/match-list/:puuid", async (req, res) => {
     try {
         const { puuid } = req.params;
         const matchList = await fetchNormalMatch(puuid);
@@ -36,7 +30,7 @@ app.get("/data/match-list/:puuid", async (req, res) => {
 })
 
 // get the details of a match 
-app.get("/data/match/:matchId", async (req, res) => {
+router.get("/data/match/:matchId", async (req, res) => {
     try {
         const { matchId } = req.params;
         const matchData = await fetchData(matchId);
@@ -47,6 +41,4 @@ app.get("/data/match/:matchId", async (req, res) => {
     }
 });
 
-app.listen(port, () => {
-  console.log(`Server started on port ${port}`);
-});
+module.exports = router;

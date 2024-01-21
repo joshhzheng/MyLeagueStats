@@ -2,9 +2,12 @@
   Inputs: AccountName, AccountTagLine
   Output: PUUID, Level, ProfileIconID (trying to convert to profileIconImg right now)
 */
-
 const axios = require("axios");
 require("dotenv/config");
+
+const {
+  getIcon,
+} = require("../controllers/iconController");
 
 const riotAPIKey = process.env.riotAPIKey;
 
@@ -43,11 +46,10 @@ async function fetchAccountData(accountName, accountTagline) {
     const summonerData = summonerResponse.data;
 
     // Map profileIconId to image URL
-    const profileIconUrl = getProfileIconUrl(summonerData.profileIconId);
+    const profileIconUrl = await getIcon(summonerData.profileIconId.toString());
 
     // Replace profileIconId with the image URL
-    summonerData.profileIconUrl = profileIconUrl;
-    delete summonerData.profileIconId;
+    summonerData.profileIconId = profileIconUrl.image.sprite;
 
     return summonerData;
   } catch (error) {

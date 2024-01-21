@@ -27,7 +27,7 @@ async function fetchData(matchId) {
     "Accept-Language": "en-CA,en-US;q=0.7,en;q=0.3",
     "Accept-Charset": "application/x-www-form-urlencoded; charset=UTF-8",
     Origin: "https://developer.riotgames.com",
-    "X-Riot-Token": riotAPIKey,
+    "X-Riot-Token": "RGAPI-f458e769-0835-4c7b-9cc1-606cbecee5d2",
   };
 
   let matchData;

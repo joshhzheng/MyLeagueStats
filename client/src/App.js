@@ -72,15 +72,12 @@ const App = () => {
     setTag(event.target.value); 
   }
 
-  const handleSearch = () => {
+  const handleSearch = async () => {
     // fetch account puuid data here
     console.log('Name:', name); // pass through here
     console.log('Tag:', tag);
-    try {
-      const uesrInfo = await getUserInfo(name, tag);
-    } catch (e) {
-      console.log(e);
-    }
+    const userInfo = await getUserInfo(name, tag);
+    return userInfo;
   }
 
   return (

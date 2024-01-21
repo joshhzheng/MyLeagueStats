@@ -25,7 +25,7 @@ app.use(cookieParser());
 
 app.use('/heros', heroRoutes); // load the router module
 app.use('/items', itemRoutes); // load the router module
-app.use('/icons', iconRoutes);
+app.use('/icons', iconRoutes); 
 app.use('/api', apiRoutes); // load the api router module
 
 module.exports = app

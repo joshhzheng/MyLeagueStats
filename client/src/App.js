@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import Match from './Components/Match';
 import './App.css';
+import cors from 'cors';
 
 import searchIcon from '../src/Assets/search.png';
 import seeMoreIcon from '../src/Assets/binoculars.png';
@@ -9,6 +10,8 @@ import seeMoreIcon from '../src/Assets/binoculars.png';
 // placeholder images:
 import summonerIcon from '../src/Assets/summoner.png';
 import topChampIcon from '../src/Assets/aatrox.png';
+
+import { getUserInfo, getMatchList, getMatchData } from './services/Services';
 
 // these imports do not work for react?? 
 // Failed ...
@@ -73,6 +76,7 @@ const App = () => {
     // fetch account puuid data here
     console.log('Name:', name); // pass through here
     console.log('Tag:', tag);
+    getUserInfo(name, tag);
   }
 
   return (
@@ -120,15 +124,15 @@ const App = () => {
      <Match match={samplePlayerData} />
 
 
-    {/* the display works when I comment out this code for some reason
-     <div>
+    {/* the display works when I comment out this code for some reason */}
+     {/* <div>
      <Link to={{
         pathname: "/game-report",
         state: { matchData: "hello" } // Replace this with your actual match data
       }}>
       <img src={seeMoreIcon} alt="See More" />
     </Link>
-    </div>  */}
+    </div>   */}
     
      
     </div>

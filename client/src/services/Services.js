@@ -2,10 +2,10 @@ import axios from 'axios';
 
 const backendUrl = 'http://localhost:8080';
 
-const getUserInfo = async (name, tagLine) => {
+const getUserInfo = async (name, tag) => {  
   let results = {};
   try {
-    results = await axios.get(`${backendUrl}/api/data/player/${name}/${tagLine}`);
+    results = await axios.get(`${backendUrl}/api/data/player/${name}/${tag}`);
     return results.data;
   } catch (err) {
     console.log(err);
@@ -27,7 +27,7 @@ const getMatchList = async (puuid) => {
 const getMatchData = async (matchId) => {
   let results = {};
   try {
-    results = await axios.post(`${backendUrl}/api/data/match/${tagLine}`);
+    results = await axios.post(`${backendUrl}/api/data/match/${matchId}`);
     return results.data;
   } catch (err) {
     console.log(err);

@@ -69,8 +69,13 @@ const App = () => {
       </div>
 
       <Match match={sampleMatchData} />
+      <img src={seeMoreIcon}></img>
+
       <Match match={sampleMatchData} />
+      <img src={seeMoreIcon}></img>
+      
       <Match match={sampleMatchData} />
+      <img src={seeMoreIcon}></img>
     </div>
   );
 };

@@ -1,6 +1,6 @@
 /*
   Inputs: AccountName, AccountTagLine
-  Output: PUUID, Level, ProfileIconID
+  Output: PUUID, Level, ProfileIconID (trying to convert to profileIconImg right now)
 */
 
 const axios = require("axios");
@@ -29,7 +29,6 @@ const getSummonerUrl = (puuid) => {
   return `https://na1.api.riotgames.com/lol/summoner/v4/summoners/by-puuid/${puuid}`;
 };
 
-// Create a function to fetch account data
 async function fetchAccountData(accountName, accountTagline) {
   const accountUrl = getAccountUrl(accountName, accountTagline);
   const accountHeaders = getAccountHeaders();
@@ -42,6 +41,13 @@ async function fetchAccountData(accountName, accountTagline) {
     const summonerUrl = getSummonerUrl(accountPuuid);
     const summonerResponse = await axios.get(summonerUrl, { headers: accountHeaders });
     const summonerData = summonerResponse.data;
+
+    // Map profileIconId to image URL
+    const profileIconUrl = getProfileIconUrl(summonerData.profileIconId);
+
+    // Replace profileIconId with the image URL
+    summonerData.profileIconUrl = profileIconUrl;
+    delete summonerData.profileIconId;
 
     return summonerData;
   } catch (error) {

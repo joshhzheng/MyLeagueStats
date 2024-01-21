@@ -9,10 +9,10 @@ const getIconValuesFromDb = async (id) => {
     try {
       await client.connect();
       const database = client.db("LeagueData");
-      const heros = database.collection("icons");
+      const icons = database.collection("icons");
 
       const query = { id: id };
-      const result = await heros.findOne(query);
+      const result = await icons.findOne(query);
       return result;
     } finally {
       await client.close();

@@ -1,28 +1,27 @@
-  .stat {
-    display: flex;
-    width: 100px;
-    justify-content: center;
-    color: rgb(0, 8, 116);
-    font-size: 30px;
-    font-weight: 800;
-    margin-top: 10px;
-  }
+/* Match.css */
+.match {
+  width: 100%;
+}
 
-  .result {
-    display: flex;
-    width: 100px;
-    justify-content: center;
-    color: rgb(0, 8, 116);
-    font-size: 40px;
-    font-weight: 800;
-    margin-top: 10px;
-  }
+.blue-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; /* Adjust this property as needed */
+  padding: 10px;
+}
 
-  .championImage {
-    display: flex;
-    justify-content: center;
-    color: black;
-    width: 200px; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
-  }
-  
+.championImage img {
+  width: 50px; /* Adjust the width as needed */
+  height: auto;
+  margin-right: 10px;
+}
+
+.result,
+.stat {
+  flex-grow: 1;
+  text-align: center;
+  color: rgb(0, 12, 82);
+  font-size: 35px;
+  font-weight: 800;
+  width: 380px;
+}

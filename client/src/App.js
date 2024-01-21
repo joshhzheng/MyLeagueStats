@@ -43,14 +43,9 @@ const App = () => {
   const samplePlayerData = {
     result: 'Victory',
     championImage: topChampIcon,
-    role: 'Top',
+    result: 'Victory',
     gameMode: "Aram",
     kda: '10/2/5',
-    damage: '15000',
-    gold: '10000',
-    cs: '200',
-    wards: '10',
-    items: ['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5', 'Item 6'],
   };
 
 

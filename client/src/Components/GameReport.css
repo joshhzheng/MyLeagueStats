@@ -1,0 +1,1139 @@
+.container {
+    width: 1600px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 18px;
+    background-image: linear-gradient(180deg, #001057 0%, #002b88 100%);
+}
+  
+.blue-info {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    gap: 100px;
+    padding-top: 0px;
+    background-color: rgb(21, 0, 70);
+    padding-bottom: 16px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+  
+.blue-result {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 10px;
+    width: 200px;
+    margin-right: 40px;
+}
+  
+.roles {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 10px;
+}
+  
+.kda {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 10px;
+}
+  
+.dmg {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 10px;
+}
+  
+.gold {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 10px;
+}
+  
+.cs {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 10px;
+}
+  
+.wards {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 10px;
+}
+  
+.items {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 10px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+  
+.blue-one {
+    padding-top: 5px;
+    display: flex;
+    align-items: center; 
+    background-color: rgb(23, 62, 146);
+}
+  
+.blue-one-champ {
+    margin-right: 10px; /* Add margin for spacing */
+    padding-left: 120px;
+}
+  
+.blue-one-spells {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    gap: 10px;
+}
+  
+.blue-one-name {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    font-weight: 800;
+    padding-left: 20px;
+    width: 80px;
+}
+  
+.blue-one-role {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 80px;
+    font-weight: 800;
+    padding-left: 62px;
+}
+  
+.blue-one-kda {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 80px;
+    font-weight: 800;
+    padding-left: 62px;
+}
+  
+.blue-one-dmg {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 120px;
+    font-weight: 800;
+    padding-left: 62px;
+}
+  
+.blue-one-gold {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 100px;
+    font-weight: 800;
+    padding-left: 60px;
+}
+  
+.blue-one-cs {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 120px;
+    font-weight: 800;
+    padding-left: 21px;
+}
+  
+.blue-one-wards {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 80px;
+    font-weight: 800;
+    padding-left: 46px;
+}
+  
+.blue-one-items {
+    padding-left: 178px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+  
+  .blue-one-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .blue-two {
+    padding-top: 5px;
+    display: flex;
+    align-items: center; 
+    background-color: rgb(23, 62, 146);
+  }
+  
+  .blue-two-champ {
+    margin-right: 10px; /* Add margin for spacing */
+    padding-left: 120px;
+  }
+  
+  .blue-two-spells {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    gap: 10px;
+  }
+  
+  .blue-two-name {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    font-weight: 800;
+    padding-left: 20px;
+    width: 80px;
+  }
+  
+  .blue-two-role {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 80px;
+    font-weight: 800;
+    padding-left: 62px;
+  }
+  
+  .blue-two-kda {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 80px;
+    font-weight: 800;
+    padding-left: 62px;
+  }
+  
+  .blue-two-dmg {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 120px;
+    font-weight: 800;
+    padding-left: 62px;
+  }
+  
+  .blue-two-gold {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 100px;
+    font-weight: 800;
+    padding-left: 60px;
+  }
+  
+  .blue-two-cs {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 120px;
+    font-weight: 800;
+    padding-left: 21px;
+  }
+  
+  .blue-two-wards {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 80px;
+    font-weight: 800;
+    padding-left: 46px;
+  }
+  
+  .blue-two-items {
+    padding-left: 178px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .blue-two-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .blue-three {
+    padding-top: 5px;
+    display: flex;
+    align-items: center; 
+    background-color: rgb(23, 62, 146);
+  }
+  
+  .blue-three-champ {
+    margin-right: 10px; /* Add margin for spacing */
+    padding-left: 120px;
+  }
+  
+  .blue-three-spells {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    gap: 10px;
+  }
+  
+  .blue-three-name {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    font-weight: 800;
+    padding-left: 20px;
+    width: 80px;
+  }
+  
+  .blue-three-role {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 80px;
+    font-weight: 800;
+    padding-left: 62px;
+  }
+  
+  .blue-three-kda {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 80px;
+    font-weight: 800;
+    padding-left: 62px;
+  }
+  
+  .blue-three-dmg {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 120px;
+    font-weight: 800;
+    padding-left: 62px;
+  }
+  
+  .blue-three-gold {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 100px;
+    font-weight: 800;
+    padding-left: 60px;
+  }
+  
+  .blue-three-cs {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 120px;
+    font-weight: 800;
+    padding-left: 21px;
+  }
+  
+  .blue-three-wards {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 80px;
+    font-weight: 800;
+    padding-left: 46px;
+  }
+  
+  .blue-three-items {
+    padding-left: 178px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .blue-three-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .blue-four {
+    padding-top: 5px;
+    display: flex;
+    align-items: center; 
+    background-color: rgb(23, 62, 146);
+  }
+  
+  .blue-four-champ {
+    margin-right: 10px; /* Add margin for spacing */
+    padding-left: 120px;
+  }
+  
+  .blue-four-spells {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    gap: 10px;
+  }
+  
+  .blue-four-name {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    font-weight: 800;
+    padding-left: 20px;
+    width: 80px;
+  }
+  
+  .blue-four-role {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 80px;
+    font-weight: 800;
+    padding-left: 62px;
+  }
+  
+  .blue-four-kda {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 80px;
+    font-weight: 800;
+    padding-left: 62px;
+  }
+  
+  .blue-four-dmg {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 120px;
+    font-weight: 800;
+    padding-left: 62px;
+  }
+  
+  .blue-four-gold {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 100px;
+    font-weight: 800;
+    padding-left: 60px;
+  }
+  
+  .blue-four-cs {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 120px;
+    font-weight: 800;
+    padding-left: 21px;
+  }
+  
+  .blue-four-wards {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 80px;
+    font-weight: 800;
+    padding-left: 46px;
+  }
+  
+  .blue-four-items {
+    padding-left: 178px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .blue-four-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .blue-five {
+    padding-top: 5px;
+    display: flex;
+    align-items: center; 
+    background-color: rgb(23, 62, 146);
+  }
+  
+  .blue-five-champ {
+    margin-right: 10px; /* Add margin for spacing */
+    padding-left: 120px;
+  }
+  
+  .blue-five-spells {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    gap: 10px;
+  }
+  
+  .blue-five-name {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    font-weight: 800;
+    padding-left: 20px;
+    width: 80px;
+  }
+  
+  .blue-five-role {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 80px;
+    font-weight: 800;
+    padding-left: 62px;
+  }
+  
+  .blue-five-kda {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 80px;
+    font-weight: 800;
+    padding-left: 62px;
+  }
+  
+  .blue-five-dmg {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 120px;
+    font-weight: 800;
+    padding-left: 62px;
+  }
+  
+  .blue-five-gold {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 100px;
+    font-weight: 800;
+    padding-left: 60px;
+  }
+  
+  .blue-five-cs {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 120px;
+    font-weight: 800;
+    padding-left: 21px;
+  }
+  
+  .blue-five-wards {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 80px;
+    font-weight: 800;
+    padding-left: 46px;
+  }
+  
+  .blue-five-items {
+    padding-left: 178px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .blue-five-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .red-info {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    gap: 100px;
+    padding-top: 0px;
+    background-color: rgb(70, 0, 0);
+    padding-bottom: 16px;
+  }
+  
+  .red-result {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 10px;
+    width: 200px;
+    margin-right: 40px;
+  }
+  
+  .red-one {
+    padding-top: 5px;
+    display: flex;
+    align-items: center; 
+    background-color: rgb(153, 0, 0);
+  }
+  
+  .red-one-champ {
+    margin-right: 10px; /* Add margin for spacing */
+    padding-left: 120px;
+  }
+  
+  .red-one-spells {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    gap: 10px;
+  }
+  
+  .red-one-name {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    font-weight: 800;
+    padding-left: 20px;
+    width: 80px;
+  }
+  
+  .red-one-role {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 80px;
+    font-weight: 800;
+    padding-left: 62px;
+  }
+  
+  .red-one-kda {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 80px;
+    font-weight: 800;
+    padding-left: 62px;
+  }
+  
+  .red-one-dmg {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 120px;
+    font-weight: 800;
+    padding-left: 62px;
+  }
+  
+  .red-one-gold {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 100px;
+    font-weight: 800;
+    padding-left: 60px;
+  }
+  
+  .red-one-cs {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 120px;
+    font-weight: 800;
+    padding-left: 21px;
+  }
+  
+  .red-one-wards {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 80px;
+    font-weight: 800;
+    padding-left: 46px;
+  }
+  
+  .red-one-items {
+    padding-left: 178px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .red-one-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .red-two {
+    padding-top: 5px;
+    display: flex;
+    align-items: center; 
+    background-color: rgb(153, 0, 0);
+  }
+  
+  .red-two-champ {
+    margin-right: 10px; /* Add margin for spacing */
+    padding-left: 120px;
+  }
+  
+  .red-two-spells {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    gap: 10px;
+  }
+  
+  .red-two-name {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    font-weight: 800;
+    padding-left: 20px;
+    width: 80px;
+  }
+  
+  .red-two-role {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 80px;
+    font-weight: 800;
+    padding-left: 62px;
+  }
+  
+  .red-two-kda {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 80px;
+    font-weight: 800;
+    padding-left: 62px;
+  }
+  
+  .red-two-dmg {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 120px;
+    font-weight: 800;
+    padding-left: 62px;
+  }
+  
+  .red-two-gold {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 100px;
+    font-weight: 800;
+    padding-left: 60px;
+  }
+  
+  .red-two-cs {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 120px;
+    font-weight: 800;
+    padding-left: 21px;
+  }
+  
+  .red-two-wards {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 80px;
+    font-weight: 800;
+    padding-left: 46px;
+  }
+  
+  .red-two-items {
+    padding-left: 178px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .red-two-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .red-three {
+    padding-top: 5px;
+    display: flex;
+    align-items: center; 
+    background-color: rgb(153, 0, 0);
+  }
+  
+  .red-three-champ {
+    margin-right: 10px; /* Add margin for spacing */
+    padding-left: 120px;
+  }
+  
+  .red-three-spells {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    gap: 10px;
+  }
+  
+  .red-three-name {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    font-weight: 800;
+    padding-left: 20px;
+    width: 80px;
+  }
+  
+  .red-three-role {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 80px;
+    font-weight: 800;
+    padding-left: 62px;
+  }
+  
+  .red-three-kda {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 80px;
+    font-weight: 800;
+    padding-left: 62px;
+  }
+  
+  .red-three-dmg {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 120px;
+    font-weight: 800;
+    padding-left: 62px;
+  }
+  
+  .red-three-gold {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 100px;
+    font-weight: 800;
+    padding-left: 60px;
+  }
+  
+  .red-three-cs {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 120px;
+    font-weight: 800;
+    padding-left: 21px;
+  }
+  
+  .red-three-wards {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 80px;
+    font-weight: 800;
+    padding-left: 46px;
+  }
+  
+  .red-three-items {
+    padding-left: 178px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .red-three-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  } 
+  
+  .red-four {
+    padding-top: 5px;
+    display: flex;
+    align-items: center; 
+    background-color: rgb(153, 0, 0);
+  }
+  
+  .red-four-champ {
+    margin-right: 10px; /* Add margin for spacing */
+    padding-left: 120px;
+  }
+  
+  .red-four-spells {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    gap: 10px;
+  }
+  
+  .red-four-name {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    font-weight: 800;
+    padding-left: 20px;
+    width: 80px;
+  }
+  
+  .red-four-role {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 80px;
+    font-weight: 800;
+    padding-left: 62px;
+  }
+  
+  .red-four-kda {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 80px;
+    font-weight: 800;
+    padding-left: 62px;
+  }
+  
+  .red-four-dmg {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 120px;
+    font-weight: 800;
+    padding-left: 62px;
+  }
+  
+  .red-four-gold {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 100px;
+    font-weight: 800;
+    padding-left: 60px;
+  }
+  
+  .red-four-cs {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 120px;
+    font-weight: 800;
+    padding-left: 21px;
+  }
+  
+  .red-four-wards {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 80px;
+    font-weight: 800;
+    padding-left: 46px;
+  }
+  
+  .red-four-items {
+    padding-left: 178px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .red-four-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .red-five {
+    padding-top: 5px;
+    display: flex;
+    align-items: center; 
+    background-color: rgb(153, 0, 0);
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
+  
+  .red-five-champ {
+    margin-right: 10px; /* Add margin for spacing */
+    padding-left: 120px;
+  }
+  
+  .red-five-spells {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    gap: 10px;
+  }
+  
+  .red-five-name {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    font-weight: 800;
+    padding-left: 20px;
+    width: 80px;
+  }
+  
+  .red-five-role {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 80px;
+    font-weight: 800;
+    padding-left: 62px;
+  }
+  
+  .red-five-kda {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 80px;
+    font-weight: 800;
+    padding-left: 62px;
+  }
+  
+  .red-five-dmg {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 120px;
+    font-weight: 800;
+    padding-left: 62px;
+  }
+  
+  .red-five-gold {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 100px;
+    font-weight: 800;
+    padding-left: 60px;
+  }
+  
+  .red-five-cs {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 120px;
+    font-weight: 800;
+    padding-left: 21px;
+  }
+  
+  .red-five-wards {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    width: 80px;
+    font-weight: 800;
+    padding-left: 46px;
+  }
+  
+  .red-five-items {
+    padding-left: 178px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .red-five-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }

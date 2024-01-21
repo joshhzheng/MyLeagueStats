@@ -1,4 +1,4 @@
-# lol-tracker
+# Leauge of Legends Player Searchup
 
 Frontend: React.js
 Backend: Node.js, express

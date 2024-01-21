@@ -1,7 +1,10 @@
-require('../Components/GameReport.css');
-const top_champ_icon = require('../src/Assets/aatrox.png');
-const flash_icon = require('../src/Assets/flash.png');
-const infinity_edge_icon = require('../src/Assets/infinity_edge.png');
+import '../Components/GameReport.css';
+import topChampIcon from '../src/Assets/aatrox.png';
+import flashIcon from '../src/Assets/flash.png';
+import infinityEdgeIcon from '../src/Assets/infinity_edge.png';
+
+// Assuming your CSS is properly imported in the above line, you can use the imported variables in your code.
+
 
 function GameReport() {
   return (
@@ -42,16 +45,16 @@ function GameReport() {
       
       <div className='blue'>
         <div className='champ'>
-          <img src={top_champ_icon} alt="" />
+          <img src={topChampIcon} alt="" />
         </div>
 
         <div className='spells'>
           <div className='spell'>
-            <img src={flash_icon} alt="" />
+            <img src={flashIcon} alt="" />
           </div>
 
           <div className='spell'>
-            <img src={flash_icon} alt="" />
+            <img src={infinityEdgeIcon} alt="" />
           </div>
         </div>
 

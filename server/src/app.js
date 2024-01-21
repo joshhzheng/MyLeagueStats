@@ -1,7 +1,9 @@
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const express = require('express'); // import the library
-const sleepRouter = require('./routes/sleepRoutes'); // import the router module
+const heroRoutes = require('./routes/heroRoutes'); // import the router module
+const itemRoutes = require('./routes/itemRoutes'); // import the router module
+const iconRoutes = require('./routes/iconRoutes'); // import the router module
 const cors = require('cors');
 
 const app = express(); // create the express object
@@ -19,6 +21,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-app.use('/sleeps', sleepRouter); // load the router module
+app.use('/heros', heroRoutes); // load the router module
+app.use('/items', itemRoutes); // load the router module
+app.use('/icons', iconRoutes);
 
 module.exports = app

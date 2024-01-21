@@ -2,11 +2,30 @@ const search_icon = require('../src/Assets/search.png');
 const summoner_icon = require('../src/Assets/summoner.png');
 const top_champ_icon = require('../src/Assets/aatrox.png');
 const see_more_icon = require('../src/Assets/binoculars.png');
+
+// ^^ these will be replaced with the actual icons from backend calls
+
 const React = require('react');
+const { useState } = require('react');
 require('./App.css');
 
-
 const App = () => {
+  const [name, setName] = useState('');     // maybe use React.useState() ? 
+  const [tag, setTag] = useState('');
+
+  const handleNameChange = (e) => {
+    setName(e.target.value);
+  };
+
+  const handleTagChange = (e) => {
+    setTag(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    // make calls to backend
+    console.log(name, tag);
+  };
+  
   return (
     <div className="container">
       <div className='top-bar'>
@@ -17,7 +36,7 @@ const App = () => {
         </div>
       </div>
 
-      <div className='summoner-data'>
+      <div className='summoner-data'> 
         <div className='summoner-name'>
           Bread
         </div>
@@ -81,7 +100,7 @@ const App = () => {
 
       <div className='match'>
         <div className='champ'>
-          <img src={top_champ_icon} alt="" />
+          <img src={top_champ_icon} alt="" /> 
         </div>
 
         <div className='gamemode'>

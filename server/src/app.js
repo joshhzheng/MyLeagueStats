@@ -12,6 +12,7 @@ app.use((err, req, res, next) => {
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
   next(err);
 });
+
 app.use(cors());
 app.use(logger('dev'));
 app.use(express.json());

@@ -1,8 +1,15 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 import '../Components/GameReport.css';
-// Assuming your CSS is properly imported in the above line, you can use the imported variables in your code.
 
 const GameReport = () => {
+  const location = useLocation();
+  const matchData = location.state ? location.state.matchData : null; 
+
+  if (!matchData) {
+    return <p>No match data available</p>
+  }
+
   return (
     <div className="container">
       <div className='blue-info'>
@@ -39,7 +46,7 @@ const GameReport = () => {
         </div>
       </div>
       
-      {/* <div className='blue'>
+      <div className='blue'>
         <div className='champ'>
           <img src={topChampIcon} alt="" />
         </div>
@@ -107,7 +114,7 @@ const GameReport = () => {
             <img src={infinityEdgeIcon} alt="" />
           </div>
         </div>
-      </div> */}
+      </div> 
     </div>
   );
 }

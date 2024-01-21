@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import './App.css';
-import Match from './Components/Match';
 import { Link } from 'react-router-dom';
+import Match from './Components/Match';
+import './App.css';
 
 import searchIcon from '../src/Assets/search.png';
 import seeMoreIcon from '../src/Assets/binoculars.png';
@@ -48,6 +48,13 @@ const App = () => {
     kda: '10/2/5',
   };
 
+  // const sampleMatchData = {        <-- this is a hashmap
+  //   playerHashMap [puuid]: 
+  //       {teamId, lane, playerName, playerTagline, championName,
+  //   kills, deaths, assists, totalDamageDealt, magicDamageDealt,
+  //   physicalDamageDealt, creepscore, visionScore, goldEarned, items[6]}
+  // }
+
 
   const [name, setName] = useState(null);
   const [tag, setTag] = useState(null);
@@ -64,7 +71,7 @@ const App = () => {
 
   const handleSearch = () => {
     // fetch account puuid data here
-    console.log('Name:', name);
+    console.log('Name:', name); // pass through here
     console.log('Tag:', tag);
   }
 
@@ -75,14 +82,14 @@ const App = () => {
           type="text"
           className="nameInput"
           placeholder="Name"
-          input value={name}
+          value={name}
           onChange={handleNameChange}
         />
         <input
           type="text"
           className="tagInput"
           placeholder="Tag"
-          input value={tag}
+          value={tag}
           onChange={handleTagChange}
         />
         <div className="search_icon" onClick={handleSearch}>
@@ -112,12 +119,16 @@ const App = () => {
      <Match match={samplePlayerData} />
      <Match match={samplePlayerData} />
 
-    
+
+    {/* the display works when I comment out this code for some reason */}
      {/* <div>
-      <Link to="/game-report">
-        <img src={seeMoreIcon} alt="See More" />      // TODO: PASS ENTIRE MATCH DATA THROUGH EACH OF THESE ICONS
-      </Link>
-    </div> */}
+     <Link to={{
+        pathname: "/game-report",
+        state: { matchData: samplePlayerData } // Replace this with your actual match data
+      }}>
+      <img src={seeMoreIcon} alt="See More" />
+    </Link>
+    </div>  */}
     
      
     </div>

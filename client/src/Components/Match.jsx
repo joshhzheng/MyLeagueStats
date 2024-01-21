@@ -6,19 +6,14 @@ const Match = ({ match }) => {
     <div className="match">
       <div className='blue-info'>
         <div className="championImage">
-          <img src={match.championImage} alt='champion img'></img>
+          <img src="../Assets/aatrox.png" alt='champion img'></img>
         </div>
-
-        <div className='result'>
-          {match.result}
-        </div>
-
         <div className="stat"> 
-          {match.gameMode}
+          {match.goldEarned}
         </div>
 
         <div className='stat'>
-          {match.kda}
+          {match.kills}/{match.deaths}/{match.assists}
         </div>
       </div>
     </div>

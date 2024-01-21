@@ -61,6 +61,9 @@ const App = () => {
 
   const [name, setName] = useState(null);
   const [tag, setTag] = useState(null);
+  const [userInfo, setuserInfo] = useState({ name:"", tagLine:"", level:"", profileIconId:"",sampleData:{}});
+  const [matchList, setMatchList] = useState([]); // array of match objects
+  const [matchInfo, setMatchInfo] = useState([]); // hashmap of match data
 
   const handleNameChange = (event) => {
     console.log(event.target.value);
@@ -77,7 +80,22 @@ const App = () => {
     console.log('Name:', name); // pass through here
     console.log('Tag:', tag);
     const userInfo = await getUserInfo(name, tag);
-    return userInfo;
+    
+    setuserInfo({
+      name: userInfo.name,
+      tagLine: tag, // Assuming you have a tagLine in your data
+      level: userInfo.summonerLevel.toString(),
+      profileIconId: userInfo.profileIconId,
+    });
+    
+    // Set the matchList state
+    const matchList = await getMatchList(userInfo.puuid);
+    setMatchList(matchList);
+
+    for(let i = 0; i < matchList.length; i++) {
+      let matchhData = await getMatchData(matchList[i]);
+      setMatchInfo(matchInfo => [...matchInfo, matchhData]);
+    }
   }
 
   return (
@@ -104,25 +122,31 @@ const App = () => {
 
       <div className='summoner-data'> 
         <div className='summoner-name'>
-          Bread 
+          {userInfo.name} 
         </div>
 
         <div className='summoner-tag'>
-          #8166
+          {userInfo.tagLine}
         </div>
       </div>  
         
       <div className='summoner-level'>
-        Level: 335
+        Level: {userInfo.level}
       </div>
       
       <div className='summoner-icon'>
-        <img src={summonerIcon} alt="" />
+        <img src={userInfo.profileIconId} alt="" />
       </div>
 
-     <Match match={samplePlayerData} />    {/* samplePlayerData object input into match component*/}
-     <Match match={samplePlayerData} />
-     <Match match={samplePlayerData} />
+      {matchInfo.length > 0 ? (
+        <div>
+          <Match match={matchInfo[0]} />
+          <Match match={matchInfo[1]} />
+          <Match match={matchInfo[2]} />
+        </div>
+      ) : (
+        <p>No match info available.</p>
+      )}
 
 
     {/* the display works when I comment out this code for some reason */}

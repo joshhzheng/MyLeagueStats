@@ -74,7 +74,7 @@
     justify-content: center;
   }
   
-  .match-top {
+  .match {
     position: relative;
     display: flex;
     justify-content: center;
@@ -85,7 +85,7 @@
     background-image: url(../src/Assets/abyss.png);
   }
   
-  .top-gamemode {
+  .gamemode {
     display: flex;
     width: 100px;
     justify-content: center;
@@ -95,7 +95,7 @@
     margin-top: 10px;
   }
   
-  .top-result {
+  .result {
     display: flex;
     width: 100px;
     justify-content: center;
@@ -105,7 +105,7 @@
     margin-top: 10px;
   }
   
-  .top-kda {
+  .kda {
     display: flex;
     width: 100px;
     justify-content: center;
@@ -115,109 +115,7 @@
     margin-top: 10px;
   }
   
-  .top-more {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 68px;
-    height: 68px; 
-    background: #ebfffc;
-    border-radius: 100%;
-    cursor: pointer;
-  }
-  
-  .match-mid {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    gap: 200px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-image: url(../src/Assets/rift.png);
-  }
-  
-  .mid-gamemode {
-    width: 100px;
-    display: flex;
-    justify-content: center;
-    color: rgb(0, 8, 116);
-    font-size: 30px;
-    font-weight: 800;
-    margin-top: 10px;
-  }
-  
-  .mid-result {
-    display: flex;
-    width: 100px;
-    justify-content: center;
-    color: rgb(0, 8, 116);
-    font-size: 30px;
-    font-weight: 800;
-    margin-top: 10px;
-  }
-  
-  .mid-kda {
-    display: flex;
-    width: 100px;
-    justify-content: center;
-    color: rgb(0, 8, 116);
-    font-size: 30px;
-    font-weight: 800;
-    margin-top: 10px;
-  }
-  
-  .mid-more {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 68px;
-    height: 68px; 
-    background: #ebfffc;
-    border-radius: 100%;
-    cursor: pointer;
-  }
-  
-  .match-bot {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    gap: 200px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-image: url(../src/Assets/rift.png);
-  }
-  
-  .bot-gamemode {
-    width: 100px;
-    display: flex;
-    justify-content: center;
-    color: rgb(0, 8, 116);
-    font-size: 30px;
-    font-weight: 800;
-    margin-top: 10px;
-  }
-  
-  .bot-result {
-    display: flex;
-    width: 100px;
-    justify-content: center;
-    color: rgb(0, 8, 116);
-    font-size: 30px;
-    font-weight: 800;
-    margin-top: 10px;
-  }
-  
-  .bot-kda {
-    display: flex;
-    width: 100px;
-    justify-content: center;
-    color: rgb(0, 8, 116);
-    font-size: 30px;
-    font-weight: 800;
-    margin-top: 10px;
-  }
-  
-  .bot-more {
+  .more {
     display: flex;
     justify-content: center;
     align-items: center;

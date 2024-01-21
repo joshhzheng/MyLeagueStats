@@ -34,68 +34,68 @@ const App = () => {
         <img src={summoner_icon} alt="" />
       </div>
 
-      <div className='match-top'>
-        <div className='champ-top'>
+      <div className='match'>
+        <div className='champ'>
           <img src={top_champ_icon} alt="" />
         </div>
 
-        <div className='top-gamemode'>
-          ARAM  
+        <div className='gamemode'>
+          ARAM
         </div> 
 
-        <div className='top-result'>
+        <div className='result'>
           WIN
         </div>
 
-        <div className='top-kda'>
+        <div className='kda'>
           6/14/31
         </div>
 
-        <div className='top-more'>
+        <div className='more'>
           <img src={see_more_icon} alt="" />
         </div>
       </div>
 
-      <div className='match-mid'>
-        <div className='champ-mid'>
+      <div className='match'>
+        <div className='champ'>
           <img src={top_champ_icon} alt="" />
         </div>
 
-        <div className='mid-gamemode'>
+        <div className='gamemode'>
           Ranked
         </div> 
 
-        <div className='mid-result'>
+        <div className='result'>
           WIN
         </div>
 
-        <div className='mid-kda'>
+        <div className='kda'>
           6/14/31
         </div>
 
-        <div className='mid-more'>
+        <div className='more'>
           <img src={see_more_icon} alt="" />
         </div>
       </div>
 
-      <div className='match-bot'>
-      <div className='champ-bot'>
+      <div className='match'>
+        <div className='champ'>
           <img src={top_champ_icon} alt="" />
         </div>
 
-        <div className='bot-gamemode'>
+        <div className='gamemode'>
           Draft
         </div> 
 
-        <div className='bot-result'>
+        <div className='result'>
           WIN
         </div>
 
-        <div className='bot-kda'>
+        <div className='kda'>
           6/14/31
         </div>
 
-        <div className='bot-more'>
+        <div className='more'>
           <img src={see_more_icon} alt="" />
         </div>
       </div>

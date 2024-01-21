@@ -1,12 +1,23 @@
 .container {
-    width: 1600px;
-    height: 867px;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    border-radius: 18px;
-    background-image: linear-gradient(180deg, #001057 0%, #002b88 100%);
-  }
+  width: 1600px;
+  height: 867px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 18px;
+  background-image: linear-gradient(180deg, #001057 0%, #002b88 100%);
+}
+
+.match {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-image: url(./Assets/rift.png);
+}
   
   .top-bar {
     display: flex;
@@ -73,18 +84,6 @@
     display: flex;
     justify-content: center;
   }
-  
-  .match {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    gap: 200px;
-    margin-top: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-image: url(../src/Assets/abyss.png);
-  }
-  
   
   .gamemode {
     display: flex;

@@ -12,11 +12,8 @@ const getItemValueFromDb = async (id) => {
       const items = database.collection("items");
 
       const query = { id: id };
-      const cursor = items.findOne(query);
-      const result = [];
-      await cursor.forEach((entry) => {
-        result.push(entry);
-      });
+      const result = await items.findOne(query);
+
       return result;
     } finally {
       await client.close();

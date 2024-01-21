@@ -6,8 +6,8 @@ const {
 
 router.get("/:id", async (req, res) => {
   const id = req.params.id;
-  const heros = await getIcon(id);
-  res.send(heros);
+  const icons = await getIcon(id);
+  res.send(icons);
 });
 
 module.exports = router;

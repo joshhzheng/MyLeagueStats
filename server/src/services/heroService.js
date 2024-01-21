@@ -12,11 +12,7 @@ const getHeroValuesFromDb = async (id) => {
       const heros = database.collection("champions");
 
       const query = { id: id };
-      const cursor = heros.findOne(query);
-      const result = [];
-      await cursor.forEach((entry) => {
-        result.push(entry);
-      });
+      const result = await heros.findOne(query);
       return result;
     } finally {
       await client.close();

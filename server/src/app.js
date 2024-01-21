@@ -3,6 +3,7 @@ const logger = require('morgan');
 const express = require('express'); // import the library
 const heroRoutes = require('./routes/heroRoutes'); // import the router module
 const itemRoutes = require('./routes/itemRoutes'); // import the router module
+const iconRoutes = require('./routes/iconRoutes'); // import the router module
 const cors = require('cors');
 
 const app = express(); // create the express object
@@ -21,5 +22,6 @@ app.use(cookieParser());
 
 app.use('/heros', heroRoutes); // load the router module
 app.use('/items', itemRoutes); // load the router module
+app.use('/icons', iconRoutes);
 
 module.exports = app

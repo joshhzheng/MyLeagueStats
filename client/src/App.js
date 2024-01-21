@@ -1,9 +1,10 @@
-const search_icon = require('../src/Assets/search.png').default;
-const summoner_icon = require('../src/Assets/summoner.png').default;
-const top_champ_icon = require('../src/Assets/aatrox.png').default;
-const see_more_icon = require('../src/Assets/binoculars.png').default;
+const search_icon = require('../src/Assets/search.png');
+const summoner_icon = require('../src/Assets/summoner.png');
+const top_champ_icon = require('../src/Assets/aatrox.png');
+const see_more_icon = require('../src/Assets/binoculars.png');
 const React = require('react');
 require('./App.css');
+
 
 const App = () => {
   return (

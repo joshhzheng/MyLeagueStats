@@ -27,7 +27,7 @@ const getMatchList = async (puuid) => {
 const getMatchData = async (matchId) => {
   let results = {};
   try {
-    results = await axios.post(`${backendUrl}/api/data/match/${tagLine}`);
+    results = await axios.post(`${backendUrl}/api/data/match/${matchId}`);
     return results.data;
   } catch (err) {
     console.log(err);

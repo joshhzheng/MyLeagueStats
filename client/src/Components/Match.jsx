@@ -3,33 +3,41 @@ import "./Match.css";
 
 const Match = ({ match }) => {
   return (
-    <div className="container">
+    <div className="match">
       <div className='blue-info'>
-        <div className='blue-result'>
+        <div className='result'>
           {match.result}
         </div>
 
-        <div className='roles'>
+        <div className="championImage">
+          <img src={match.championImage} alt='champion img'></img>
+        </div>
+
+        <div className='stat'>
           {match.role}
         </div>
 
-        <div className='kda'>
+        <div className="stat"> 
+        {match.gameMode}
+        </div>
+
+        <div className='stat'>
           {match.kda}
         </div>
 
-        <div className='dmg'>
+        <div className='stat'>
           {match.damage}
         </div>
 
-        <div className='gold'>
+        <div className='stat'>
           {match.gold}
         </div>
 
-        <div className='cs'>
+        <div className='stat'>
           {match.cs}
         </div>
 
-        <div className='wards'>
+        <div className='stat'>
           {match.wards}
         </div>
 

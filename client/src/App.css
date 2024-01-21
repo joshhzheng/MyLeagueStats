@@ -85,36 +85,6 @@
     justify-content: center;
   }
   
-  .gamemode {
-    display: flex;
-    width: 100px;
-    justify-content: center;
-    color: rgb(0, 8, 116);
-    font-size: 30px;
-    font-weight: 800;
-    margin-top: 10px;
-  }
-  
-  .result {
-    display: flex;
-    width: 100px;
-    justify-content: center;
-    color: rgb(0, 8, 116);
-    font-size: 30px;
-    font-weight: 800;
-    margin-top: 10px;
-  }
-  
-  .kda {
-    display: flex;
-    width: 100px;
-    justify-content: center;
-    color: rgb(0, 8, 116);
-    font-size: 30px;
-    font-weight: 800;
-    margin-top: 10px;
-  }
-  
   .more {
     display: flex;
     justify-content: center;

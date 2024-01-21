@@ -1,20 +1,28 @@
-/* .container {
-    position: relative;
+  .stat {
+    display: flex;
+    width: 100px;
+    justify-content: center;
+    color: rgb(0, 8, 116);
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 10px;
+  }
+
+  .result {
+    display: flex;
+    width: 100px;
+    justify-content: center;
+    color: rgb(0, 8, 116);
+    font-size: 40px;
+    font-weight: 800;
+    margin-top: 10px;
+  }
+
+  .championImage {
     display: flex;
     justify-content: center;
-    gap: 200px;
-    margin-top: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-image: url(../Assets/abyss.png);
-  } */
-
-  .container {
-    width: 1600px;
-    height: 867px;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    border-radius: 18px;
-    background-image: linear-gradient(180deg, #001057 0%, #002b88 100%);
+    color: black;
+    width: 200px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
   }
+  

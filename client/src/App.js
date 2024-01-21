@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import Match from './Components/Match';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 import searchIcon from '../src/Assets/search.png';
 import summonerIcon from '../src/Assets/summoner.png';
@@ -68,14 +68,16 @@ const App = () => {
         <img src={summonerIcon} alt="" />
       </div>
 
-      <Match match={sampleMatchData} />
-      <img src={seeMoreIcon}></img>
+     <Match match={sampleMatchData} />
 
-      <Match match={sampleMatchData} />
-      <img src={seeMoreIcon}></img>
-      
-      <Match match={sampleMatchData} />
-      <img src={seeMoreIcon}></img>
+    
+     {/* <div>
+      <Link to="/game-report">
+        <img src={seeMoreIcon} alt="See More" />
+      </Link>
+    </div> */}
+    
+     
     </div>
   );
 };

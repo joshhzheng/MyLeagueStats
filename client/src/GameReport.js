@@ -1,12 +1,8 @@
+import React from 'react';
 import '../Components/GameReport.css';
-import topChampIcon from '../src/Assets/aatrox.png';
-import flashIcon from '../src/Assets/flash.png';
-import infinityEdgeIcon from '../src/Assets/infinity_edge.png';
-
 // Assuming your CSS is properly imported in the above line, you can use the imported variables in your code.
 
-
-function GameReport() {
+const GameReport = () => {
   return (
     <div className="container">
       <div className='blue-info'>
@@ -43,7 +39,7 @@ function GameReport() {
         </div>
       </div>
       
-      <div className='blue'>
+      {/* <div className='blue'>
         <div className='champ'>
           <img src={topChampIcon} alt="" />
         </div>
@@ -88,30 +84,30 @@ function GameReport() {
 
         <div className='items'>
           <div className='item'>
-            <img src={infinity_edge_icon} alt="" />
+            <img src={infinityEdgeIcon} alt="" />
           </div>
           
           <div className='item'>
-            <img src={infinity_edge_icon} alt="" />
+            <img src={infinityEdgeIcon} alt="" />
           </div>
 
           <div className='item'>
-            <img src={infinity_edge_icon} alt="" />
+            <img src={infinityEdgeIcon} alt="" />
           </div>
 
           <div className='item'>
-            <img src={infinity_edge_icon} alt="" />
+            <img src={infinityEdgeIcon} alt="" />
           </div>
           
           <div className='item'>
-            <img src={infinity_edge_icon} alt="" />
+            <img src={infinityEdgeIcon} alt="" />
           </div>
             
           <div className='item'>
-            <img src={infinity_edge_icon} alt="" />
+            <img src={infinityEdgeIcon} alt="" />
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
